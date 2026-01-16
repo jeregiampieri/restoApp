@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         color: white;
         -webkit-tap-highlight-color: transparent;
         overflow-x: hidden;
+        font-family: 'Montserrat', sans-serif;
     }
     a {
         text-decoration: none;
