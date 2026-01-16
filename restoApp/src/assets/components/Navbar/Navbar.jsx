@@ -3,6 +3,7 @@ import {NavbarContainer, LinksContainer, UserContainerStyled, HomeContainerStyle
 import {motion, scale} from "framer-motion"
 import { ImHome } from "react-icons/im";
 import { FaCircleUser } from "react-icons/fa6";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 // Creación del componente NAVBAR
 export const Navbar = () => {
@@ -37,7 +38,11 @@ export const Navbar = () => {
                         <SpanStyled>Iniciar sesión</SpanStyled>
                     </motion.div>
                 </UserContainerStyled>   
-                <MenuContainerStyled></MenuContainerStyled>
+                <MenuContainerStyled>
+                    <motion.div whileTap={{scale: 0.93}}>
+                        <RxHamburgerMenu />
+                    </motion.div>
+                </MenuContainerStyled>
             </LinksContainer>
         </NavbarContainer>
     )

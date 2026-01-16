@@ -8,6 +8,9 @@ export const NavbarContainer = styled.header`
     justify-content: space-between;
     align-items: center;
     padding: 1rem 4rem;
+    @media (max-width: 768px){
+        padding: 1rem 2.5rem;
+    }
 `
 
 // Creación del contenedor de la imagen
@@ -71,6 +74,7 @@ export const HomeContainerStyled = styled(LinkContainer)`
 // Aplico herencia para que MenuContainerStyled herede los estilos que ya están en LinkContainer
 export const MenuContainerStyled = styled(LinkContainer)`
     /* Recordar que los iconos los puedo estilar (su tamaño) con font-size */
+    font-size: 2rem;
     display: none;
     cursor: pointer;
     @media (max-width: 769px){
