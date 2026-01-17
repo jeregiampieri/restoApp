@@ -1,8 +1,10 @@
 import React from "react";
 import { LayoutStyle } from "./LayoutStyle.js";
 
-export const Layout = () => {
+export const Layout = ({children}) => {
     return (
-        <LayoutStyle></LayoutStyle>
+        <LayoutStyle>
+            {children}
+        </LayoutStyle>
     )
 }
