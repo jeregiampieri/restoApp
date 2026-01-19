@@ -51,5 +51,5 @@ export const HeroTextContainer = styled.div`
 
 // Contenedor de la imagen del hero
 export const HeroImgContainer = styled.div`
-
+    
 `
