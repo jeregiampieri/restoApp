@@ -2,8 +2,7 @@ import styled from "styled-components"
 import {motion} from "framer-motion"
 
 // Estilado del botón
-export const ButtonStyled = styled(motion.button).attrs(() => ({
-  whileTap: {scale: 0.98}}))`
+export const ButtonStyled = styled(motion.button).attrs(() => ({whileTap: {scale: 0.98}}))`
     margin: 20px 0;
     width: auto;
     padding: 10px 30px;

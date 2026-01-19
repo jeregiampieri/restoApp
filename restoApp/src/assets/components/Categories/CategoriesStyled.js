@@ -29,8 +29,18 @@ export const CardsContainer = styled.div`
     align-items: center;
     gap: 20px;
 `
+
+// Línea decorativa dentro de la card
+export const BorderDecoration = styled.div`
+    display: flex;
+    width: 30%;
+    height: 5px;
+    border-radius: 15px;
+    background: linear-gradient(83deg, #ffa100,   #fb103d);
+`
+
 // Contenedor de cada card
-export const CardCategorie = styled(motion.div)`
+export const CardCategorie = styled(motion.div).attrs(() => ({whileTap: {scale: 0.98}}))`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,14 +58,8 @@ export const CardCategorie = styled(motion.div)`
     &:hover{
         background-color: #c8c8c8d5;
         color: black;
+        ${BorderDecoration}{
+            background: linear-gradient(83deg, #131415, #979da4);
+        }
     }
-`
-
-// Línea decorativa dentro de la card
-export const BorderDecoration = styled.div`
-    display: flex;
-    width: 30%;
-    height: 5px;
-    border-radius: 15px;
-    background: linear-gradient(83deg, #ffa100,   #fb103d);
 `
