@@ -9,7 +9,7 @@ export const Categories = () => {
             <CardsContainer>
                 {
                     categories.map((categoria) => {
-                        return <CardCategorie>
+                        return <CardCategorie key={categoria.id}>
                             <img src= {categoria.img} alt={`Imagen de ${categoria.img}`}/>
                             {/* Acceso a una propiedad del objeto categoria */}
                             <h2>{categoria.title}</h2>

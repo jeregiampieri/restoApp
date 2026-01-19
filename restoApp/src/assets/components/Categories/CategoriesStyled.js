@@ -10,6 +10,7 @@ export const CategoriesContainer = styled.section`
     align-items: flex-start;
     max-width: 1200px;
     width: 100%;
+    gap: 15px;
     margin-left: 112px;
     margin-bottom: 50px;
     h1{
