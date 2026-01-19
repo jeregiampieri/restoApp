@@ -3,11 +3,10 @@ import styled from "styled-components"
 // Contenedor general del hero
 export const HeroContainer = styled.section`
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 30px;
     width: 100%;
     h1 {
         margin-bottom: 2rem;
@@ -51,5 +50,17 @@ export const HeroTextContainer = styled.div`
 
 // Contenedor de la imagen del hero
 export const HeroImgContainer = styled.div`
-    
+    display: flex;
+    width: 40%;
+    transition: all 0.5s ease;
+    img {
+        width: 100%;
+        padding-bottom: 75px;
+    }
+    &:hover{
+        transform: scale(0.98);
+    }
+    @media (max-width: 1000px){
+        display: none;
+    }
 `
