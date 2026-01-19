@@ -11,7 +11,8 @@ export const Products = () => {
                 products.map((productos) => {
                     return <CardProduct>
                             <img src={productos.img} alt={`Imagen de ${productos.title}`} />
-                            <h3>{productos.title}</h3>
+                            <h3>{productos.title.toUpperCase()}</h3>
+                            <p>{productos.desc.toUpperCase()}</p>
                         </CardProduct>
                 })
             }

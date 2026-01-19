@@ -33,18 +33,25 @@ export const CardProduct = styled.div`
     flex-direction: column;
     width: 300px;
     height: 300px;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: #2b2b2c;
-    justify-content: center;
-    align-items: center;
-    min-height: 200px;
-    margin-left: 40px;
+    align-items: flex-start;
+    margin-left: 20px;
+    padding: 15px;
     img {
+        margin-top: 15px;
+        margin-left: 14.5px;
         width: 90%;
         height: 125px;
-        margin-bottom: 80px;
+    }
+    h3{
+        font-weight: 100;
+    }
+    p{
+        color: #7d7d7d;
     }
 `
 export const InfoProduct = styled.div`
     display: flex;
+    width: 100%;
 `
