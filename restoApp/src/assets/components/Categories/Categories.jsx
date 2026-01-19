@@ -1,5 +1,5 @@
 import React from "react";
-import { CardsContainer, CategoriesContainer } from "./CategoriesStyled";
+import { BorderDecoration, CardCategorie, CardsContainer, CategoriesContainer } from "./CategoriesStyled";
 import {categories} from "../../data/Categorias.js"
 
 export const Categories = () => {
@@ -9,7 +9,12 @@ export const Categories = () => {
             <CardsContainer>
                 {
                     categories.map((categoria) => {
-                        
+                        return <CardCategorie>
+                            <img src= {categoria.img} alt={`Imagen de ${categoria.img}`}/>
+                            {/* Acceso a una propiedad del objeto categoria */}
+                            <h2>{categoria.title}</h2>
+                            <BorderDecoration></BorderDecoration>
+                        </CardCategorie>
                     })
                 }
             </CardsContainer>
