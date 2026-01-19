@@ -11,6 +11,7 @@ export const CategoriesContainer = styled.section`
     max-width: 1200px;
     width: 100%;
     margin-left: 112px;
+    margin-bottom: 50px;
     h1{
         font-weight: 100;
     }
@@ -24,10 +25,13 @@ export const CategoriesContainer = styled.section`
 // Contenedor de las cards
 export const CardsContainer = styled.div`
     display: flex;
+    max-width: 1200px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
 `
 
 // Línea decorativa dentro de la card
@@ -45,9 +49,11 @@ export const CardCategorie = styled(motion.div).attrs(() => ({whileTap: {scale: 
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 165px;
     gap: 8px;
     width: 225px;
     padding: 2rem 0.5rem;
+    align-items: center;
     border-radius: 15px;
     background-color: #363636c3;
     cursor: pointer;
