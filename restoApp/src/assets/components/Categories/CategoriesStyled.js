@@ -11,9 +11,9 @@ export const CategoriesContainer = styled.section`
     max-width: 1200px;
     width: 100%;
     gap: 15px;
-    margin-left: 112px;
-    margin-bottom: 50px;
     h1{
+        margin-left: 55px;
+        margin-bottom: 20px;
         font-weight: 100;
     }
     @media (max-width: 1000px){
@@ -52,8 +52,8 @@ export const CardCategorie = styled(motion.div).attrs(() => ({whileTap: {scale: 
     align-items: center;
     min-height: 165px;
     gap: 8px;
-    width: 225px;
-    padding: 2rem 0.5rem;
+    width: 200px;
+    padding: 1rem 0.5rem;
     align-items: center;
     border-radius: 15px;
     background-color: #363636c3;
