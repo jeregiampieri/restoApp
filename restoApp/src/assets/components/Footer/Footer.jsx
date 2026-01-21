@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterInfoStyled, FooterStyled } from "./FooterStyled";
+import { FooterInfoStyled, FooterOwnerStyled, FooterStyled } from "./FooterStyled";
 
 export const Footer = () => {
     return (
@@ -9,6 +9,9 @@ export const Footer = () => {
                 <p>Trabaja con nosotros</p>
                 <p>Soporte</p>
             </FooterInfoStyled>
+            <FooterOwnerStyled>
+                <p>Hecho por <span><strong>Giampieri Navarro, Jeremías Caleb</strong></span></p>
+            </FooterOwnerStyled>
         </FooterStyled>
     )
 }

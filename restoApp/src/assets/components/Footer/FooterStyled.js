@@ -8,7 +8,7 @@ export const FooterStyled = styled.footer`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem 0 2rem 0;
+    padding: 3.5rem 0 2rem 0;
 `
 // Contenedor del footer info
 export const FooterInfoStyled = styled.div`
@@ -30,5 +30,23 @@ export const FooterInfoStyled = styled.div`
     }
     p:hover{
         color: white;
+        text-decoration: underline;
+    }
+`
+// Contenedor del owner 
+export const FooterOwnerStyled = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    p{
+        font-weight: 100;
+        color: white;
+    }
+    p span{
+        font-weight: 800;
+    }
+    @media (max-width: 421px) {
+        display: none;
     }
 `
