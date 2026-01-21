@@ -11,7 +11,6 @@ export const Categories = () => {
                     categories.map((categoria) => {
                         return <CardCategorie key={categoria.id}>
                             <img src= {categoria.img} alt={`Imagen de ${categoria.img}`}/>
-                            {/* Acceso a una propiedad del objeto categoria */}
                             <h2>{categoria.title}</h2>
                             <BorderDecoration></BorderDecoration>
                         </CardCategorie>

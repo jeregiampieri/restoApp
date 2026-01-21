@@ -11,15 +11,15 @@ export const CategoriesContainer = styled.section`
     max-width: 1200px;
     width: 100%;
     gap: 15px;
+    margin-left: 56px;
+    margin-right: 56px;
     h1{
-        margin-left: 55px;
         margin-bottom: 20px;
         font-weight: 100;
     }
-    @media (max-width: 1000px){
+    @media (max-width: 1302px){
         align-items: center;
         text-align: center;
-        margin-left: 0;
         padding-top: 30px;
     }
 `

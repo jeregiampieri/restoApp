@@ -9,24 +9,30 @@ export const ProductsContainer = styled.section`
     justify-content: center;
     align-items: flex-start;
     max-width: 1200px;
-    width: 100%;
     gap: 15px;
-    margin-left: 112px;
+    margin-left: 56px;
+    margin-right: 56px;
     margin-bottom: 50px;
     h1 {
         font-weight: 100;
     }
-    @media (max-width: 1000px) {
+    @media (max-width: 1302px) {
         text-align: center;
         align-items: center;
+        justify-content: center;
     }
 `
 // Contenedor de las cards productos
 export const CardsProductsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 100px;
     width: 100%;
+    @media (max-width: 1302px){
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
 `
 // Contenedor de cada card
 export const CardProduct = styled.div`
@@ -69,9 +75,12 @@ export const InfoProduct = styled.div`
     text-align: center;
     p{
         margin: 0;
-        font-weight: 100;
-        font-size: 19px;
         line-height: 1;
-        color: white;
+        font-weight: 100;
+	    font-size: 1.5rem;
+	    background: linear-gradient(83deg, #ffa100, #fb103d);
+	    background-clip: text;
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
     }
 `
